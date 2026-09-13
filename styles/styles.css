@@ -1,7 +1,6 @@
 nav {
     background-color: steelblue;
     padding: 10px;
-
 }
 
 nav a {
@@ -12,6 +11,10 @@ nav a {
 
 h1 {
     color: steelblue;
+}
+
+main {
+    max-width: 840px;
 }
 
 main img {
