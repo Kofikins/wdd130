@@ -13,7 +13,6 @@ nav {
     background-color: steelblue;
     padding: 10px;
     display: flex;
-    /* FIX 1 */
     gap: 10px;
 }
 
@@ -46,6 +45,7 @@ main img {
 
 p {
     margin: 1rem;
+    padding: 0;
 }
 
 aside {
@@ -67,7 +67,6 @@ aside img {
 aside h2 {
     position: absolute;
     top: 15px;
-    /* FIX 2 */
     left: 0;
     right: 0;
     text-align: center;
@@ -85,7 +84,6 @@ footer {
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    /* FIX 3 - was 1, should be 0.1 */
     padding: 1rem;
     background-color: #eee;
     color: #000;
