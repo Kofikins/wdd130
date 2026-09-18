@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #162f65;
+    --secondary-color: #1e3a8a;
+    --accent1-color: #ffffff;
+    --accent2-color: #000000;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    margin: 5px 0;
+    padding: 0;
+}
+
+header nav a {
+    display: list-item;
+    list-style: disc inside;
+    margin-left: 20px;
+    color: #0000EE;
+    font-size: 12px;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    border: 1px solid #000;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    background-color: #162f65;
+    opacity: 0.9;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    right: 15px;
+    background-color: #1e3a6b;
+    opacity: 0.95;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0;
+}
+
+.hero article p {
+    font-size: 11px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 10px;
+}
+
+.hero article img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+/* HISTORY */
+.history,
+.adventure {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.history h2,
+.adventure h2 {
+    background-color: #162f65;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.history p {
+    font-size: 11px;
+    padding: 10px 5px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: 11px;
+    margin: 0;
+    padding: 2px 0;
+}
+
+.socialmedia {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
