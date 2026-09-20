@@ -25,42 +25,73 @@ footer {
     margin: 0 auto;
 }
 
-header {
-    padding: 10px 0;
+/* REQUIRED: nav rule with background-color and padding */
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
+/* REQUIRED: nav a rule with color, padding, display:block */
+nav a {
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* REQUIRED: main rule with max-width */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* REQUIRED: main img rule */
+main img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* REQUIRED: aside rule */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    color: #333;
+}
+
+/* REQUIRED: aside img rule */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* REQUIRED: p rule with padding:0 */
+p {
+    padding: 0;
+}
+
+/* REQUIRED: footer rule */
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/* Your other styles */
 header img {
     width: 100px;
 }
 
-header nav {
-    margin: 5px 0;
-    padding: 0;
-}
-
-header nav a {
-    display: list-item;
-    list-style: disc inside;
-    margin-left: 20px;
-    color: #0000EE;
-    font-size: 12px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 10px;
-    padding: 5px;
-}
-
-/* HERO */
 .hero {
     position: relative;
     border: 1px solid #000;
@@ -82,6 +113,7 @@ article {
     text-align: center;
     padding: 10px;
     font-size: 24px;
+    color: white;
 }
 
 .hero article {
@@ -113,13 +145,6 @@ article {
     margin: 5px;
 }
 
-/* HISTORY */
-.history,
-.adventure {
-    margin: 15px 0;
-    padding: 0;
-}
-
 .history h2,
 .adventure h2 {
     background-color: #162f65;
@@ -128,36 +153,6 @@ article {
     padding: 8px;
     font-size: 14px;
     margin: 0;
-}
-
-.history p {
-    font-size: 11px;
-    padding: 10px 5px;
-    margin: 0;
-    line-height: 1.4;
-}
-
-/* FOOTER */
-footer {
-    border-top: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-}
-
-footer p {
-    font-size: 11px;
-    margin: 0;
-    padding: 2px 0;
-}
-
-.socialmedia {
-    margin: 5px 0;
-    padding: 0;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .socialmedia img {
