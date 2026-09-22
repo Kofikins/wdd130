@@ -1,23 +1,27 @@
 :root {
-    --primary-color: #0b7a8a;
+    --primary-color: #087e8b;
     --secondary-color: #ffb703;
     --accent1-color: #023047;
     --accent2-color: #8ecae6;
-    --heading-font: Georgia, serif;
+    --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #ffffff;
 }
 
+/* Page Width */
 header,
 main,
 footer {
@@ -25,123 +29,151 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER - teal like photo */
+/* Header */
 header {
     background-color: var(--primary-color);
+    color: var(--accent2-color);
     padding: 10px;
 }
 
-header img {
-    width: 110px;
-    background-color: white;
+/* Logo */
+header > img {
+    width: 150px;
+    height: auto;
     display: block;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    margin: 16px;
+    padding: 8px;
 }
 
 header nav {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    align-items: center;
 }
 
-header nav a {
+nav a {
     color: white;
     text-decoration: none;
+    padding: 8px 15px;
     font-weight: bold;
-    font-family: var(--heading-font);
 }
 
-/* HERO - like photo */
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    margin: 16px;
+    padding: 8px;
+    line-height: 1.5;
+}
+
+/* Sections and Articles */
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero */
 .hero {
     position: relative;
+    margin-top: 20px;
 }
 
+/* Hero Image */
 .hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 25px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--accent1-color);
-    color: #fff;
-    opacity: 0.85;
-}
-
+/* Article Overlay */
 .hero article {
     position: absolute;
-    bottom: 30px;
     left: 30px;
     right: 30px;
-    background-color: rgba(2, 48, 71, 0.85);
+    bottom: 30px;
+    background-color: rgba(2, 48, 71, 0.8);
     color: white;
-    padding: 12px;
-    border: 1px solid var(--accent2-color);
+    padding: 15px;
 }
 
+/* Article Text */
 .hero article p {
     color: white;
-    font-size: 12px;
-    line-height: 1.4;
 }
 
+/* Happy Client Image */
 .hero article img {
     float: right;
     width: 125px;
     height: auto;
-    margin: 0 0 5px 12px;
-    border: 1px solid white;
-    box-shadow: 0 0 5px #000;
+    margin: 0 0 10px 15px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px #000;
 }
 
-/* SECTIONS - like photo */
+/* History Section */
 section {
-    margin: 20px 0;
+    margin-top: 25px;
 }
 
-section h2 {
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-    margin-bottom: 8px;
-}
-
-section h2:hover {
-    color: var(--secondary-color);
-}
-
-section p {
-    padding: 8px 0;
-}
-
-/* FOOTER - like photo */
+/* Footer */
 footer {
-    margin-top: 20px;
-    border-top: 1px solid #000;
+    margin-top: 30px;
+    border-top: 1px solid var(--accent1-color);
     padding: 15px 0;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-footer p {
-    font-size: 12px;
-}
-
+/* Social Media */
 .socialmedia {
     display: flex;
-    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
+.socialmedia a:hover {
+    background-color: var(--accent2-color);
+}
+
 .socialmedia img {
-    width: 38px;
-    height: 38px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
