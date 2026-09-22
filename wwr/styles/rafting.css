@@ -7,21 +7,17 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #ffffff;
 }
 
-/* Page Width */
 header,
 main,
 footer {
@@ -29,37 +25,35 @@ footer {
     margin: 0 auto;
 }
 
-/* Header */
+/* HEADER - Grid Required */
 header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-/* Logo */
 header > img {
-    width: 150px;
+    width: 100px;
     height: auto;
-    display: block;
-    margin-bottom: 10px;
+    justify-self: center;
 }
 
-/* Navigation */
-nav {
-    margin: 16px;
-    padding: 8px;
-}
-
+/* NAV - Flex Required */
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
 }
 
 nav a {
-    color: white;
+    color: var(--accent1-color);
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-weight: bold;
 }
 
@@ -68,7 +62,6 @@ nav a:hover {
     color: var(--accent1-color);
 }
 
-/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -88,36 +81,32 @@ h1 {
 
 h2 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
-/* Paragraphs */
 p {
     margin: 16px;
     padding: 8px;
     line-height: 1.5;
 }
 
-/* Sections and Articles */
 section,
 article {
     margin: 16px;
     padding: 8px;
 }
 
-/* Hero */
 .hero {
     position: relative;
     margin-top: 20px;
 }
 
-/* Hero Image */
 .hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Article Overlay */
 .hero article {
     position: absolute;
     left: 30px;
@@ -128,52 +117,84 @@ article {
     padding: 15px;
 }
 
-/* Article Text */
 .hero article p {
     color: white;
+    margin: 0;
 }
 
-/* Happy Client Image */
 .hero article img {
     float: right;
     width: 125px;
-    height: auto;
     margin: 0 0 10px 15px;
     border: 3px solid white;
     box-shadow: 0 0 10px #000;
 }
 
-/* History Section */
-section {
-    margin-top: 25px;
+/* HISTORY - Grid like wireframe */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-/* Footer */
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* ADVENTURES - 5 figures horizontally */
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventure-gallery figcaption {
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+/* FOOTER - social to the right */
 footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     margin-top: 30px;
     border-top: 1px solid var(--accent1-color);
-    padding: 15px 0;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
     text-align: center;
 }
 
-/* Social Media */
 .socialmedia {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
-.socialmedia a:hover {
-    background-color: var(--accent2-color);
-}
-
 .socialmedia img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+    width: 35px;
+    height: 35px;
 }
