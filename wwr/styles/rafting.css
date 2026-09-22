@@ -194,6 +194,19 @@ footer p {
     text-decoration: none;
 }
 
+.socialmedia a:hover {
+    background-color: var(--accent2-color);
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
 .socialmedia img {
     width: 35px;
     height: 35px;
