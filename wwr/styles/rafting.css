@@ -53,7 +53,7 @@ header nav {
 nav a {
     color: var(--accent1-color);
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 6px 10px;
     font-weight: bold;
 }
 
