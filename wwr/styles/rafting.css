@@ -25,41 +25,45 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER - Grid Required */
+/* HEADER - CORRECTED TO WHITE LIKE YOU WANT */
 header {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 120px 1fr;
     align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px 20px;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
 header > img {
-    width: 100px;
+    width: 75px;
     height: auto;
-    justify-self: center;
+    justify-self: start;
 }
 
-/* NAV - Flex Required */
+/* NAV - CORRECTED - NO WHITE BOX */
 header nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+    gap: 25px;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 nav a {
-    color: var(--accent1-color);
+    color: #000;
     text-decoration: none;
-    padding: 6px 10px;
-    font-weight: bold;
+    padding: 0;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 h1,
