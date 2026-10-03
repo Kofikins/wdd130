@@ -25,7 +25,6 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER - CORRECTED TO WHITE LIKE YOU WANT */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -41,7 +40,6 @@ header > img {
     justify-self: start;
 }
 
-/* NAV - CORRECTED - NO WHITE BOX */
 header nav {
     display: flex;
     justify-content: flex-end;
