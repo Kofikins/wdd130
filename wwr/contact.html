@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Rapids White Water Rafting</title>
+    <title>Contact Us | Splash White Water Rafting</title>
     <meta name="description" content="Contact White Water Rafting Company">
-    <meta name="author" content="Bright Anibra">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -22,51 +21,66 @@
     </header>
 
     <main>
-        <div class="company-info">
+        <section class="company-info">
             <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p>info@whitewater.com</p>
-        </div>
+            <p>
+                123 Main River Street<br>
+                Kolob, California 12345<br>
+                +1 999 999 9999<br>
+                info@whitewater.com
+            </p>
+        </section>
 
-        <div class="contact-layout">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12345!2d-111.0!3d39.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1234567890"
-              allowfullscreen="" loading="lazy"></iframe>
+        <div class="contact-grid">
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.681424!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjgiVw!5e0!3m2!1sen!2sus!4v1"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
             <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Placeholder">
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Placeholder">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Placeholder">
+                <label for="useremail">Email</label>
+                <input type="email" id="useremail" name="useremail" placeholder="Placeholder">
 
-                <p>Message Purpose</p>
-                <label><input type="radio" name="purpose" checked> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <label><input type="radio" name="purpose" value="general" checked> General
+                        Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation
+                        Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website
+                        Suggestion</label>
+                </fieldset>
 
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Type here"></textarea>
+                <textarea id="message" name="message" placeholder="Type here"></textarea>
 
-                <label><input type="checkbox" checked> Please Subscribe me to the monthly
-                    newsletter</label>
+                <label class="newsletter">
+                    <input type="checkbox" name="subscribe"> Please Subscribe me to the monthly
+                    newsletter
+                </label>
 
                 <button type="submit">Get in Touch!</button>
             </form>
         </div>
 
-        <section class="employees-section">
+        <section class="employees">
             <h2>We Are Here to Serve You</h2>
-            <div class="employees-grid">
-                <figure><img src="images/employee1.jpg" alt="Employee">
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
-                <figure><img src="images/employee2.jpg" alt="Employee">
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
-                <figure><img src="images/employee3.jpg" alt="Employee">
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
             </div>
@@ -74,12 +88,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Rapids White Water Rafting | Bright Anibra</p>
-        <div class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </div>
+        <p>&copy; 2026 Splash White Water Rafting | Bright Anibra</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://x.com"><img src="images/twitter.svg" alt="Twitter icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg"
+                  alt="Instagram icon"></a>
+        </nav>
     </footer>
 </body>
 
