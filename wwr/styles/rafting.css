@@ -76,8 +76,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.85;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 h2 {
@@ -225,8 +225,8 @@ article {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    background-color: var(--accent1-color) !important;
-    color: #fff !important;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
 .employees {
@@ -270,19 +270,19 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--accent1-color) !important;
+    background-color: var(--accent1-color);
     padding: 12px 20px;
 }
 
 footer p {
-    margin: 0 !important;
-    padding: 0 !important;
-    background: none !important;
-    background-color: transparent !important;
-    color: #fff !important;
+    margin: 0;
+    padding: 0;
+    background: none;
+    background-color: transparent;
+    color: #fff;
     font-size: 12px;
     text-align: left;
-    display: block !important;
+    display: block;
 }
 
 .socialmedia {
