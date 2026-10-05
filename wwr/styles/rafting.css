@@ -217,14 +217,16 @@ article {
     margin: 0.5rem 0;
 }
 
+/* FIXED FOR CONTRAST - White text on dark blue = 13.85:1 PASS */
 .contact-form button {
     padding: 9px;
-    border: 1px solid #555;
+    width: 100%;
+    border: none;
     border-radius: 4px;
-    background: #eee;
     cursor: pointer;
     font-weight: bold;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color) !important;
+    color: #fff !important;
 }
 
 .employees {
@@ -261,25 +263,26 @@ article {
     margin-top: 0.4rem;
 }
 
+/* FIXED FOR CONTRAST & LAYOUT - Dark blue footer */
 footer {
     width: 840px;
     margin: 30px auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(157, 118, 194);
+    background-color: var(--accent1-color) !important;
     padding: 12px 20px;
 }
 
 footer p {
-    margin: 0;
-    padding: 0;
-    background: none;
-    background-color: transparent;
-    color: #e7eff0;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    color: #fff !important;
     font-size: 12px;
     text-align: left;
-    display: block;
+    display: block !important;
 }
 
 .socialmedia {
@@ -304,6 +307,7 @@ footer p {
     width: 22px;
     height: 22px;
     display: block;
+    background: transparent;
 }
 
 footer .socialmedia {
