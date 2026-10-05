@@ -71,7 +71,6 @@ h2 {
 }
 
 h1 {
-
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -167,41 +166,6 @@ article {
     font-size: 0.85rem;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    margin-top: 30px;
-    border-top: 1px solid var(--accent1-color);
-    padding: 15px;
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia a:hover {
-    background-color: var(--accent2-color);
-}
-
-.socialmedia img {
-    width: 35px;
-    height: 35px;
-}
-
 .company-info {
     text-align: center;
     padding: 1.5rem;
@@ -223,7 +187,6 @@ footer p {
     background: #e5e5e5;
 }
 
-/* Reuse form styles - common input rule */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -255,14 +218,15 @@ footer p {
 }
 
 .contact-form button {
-    padding: 0.6rem;
-    border: 1px solid #000;
-    border-radius: 5px;
+    padding: 9px;
+    border: 1px solid #555;
+    border-radius: 4px;
     background: #eee;
     cursor: pointer;
+    font-weight: bold;
+    background-color: var(--primary-color);
 }
 
-/* Employees - reusing figure style from Adventure section */
 .employees {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -282,7 +246,6 @@ footer p {
     text-align: center;
 }
 
-/* Shared image rule to avoid repeat */
 .employee-profiles img,
 .adventure-grid img {
     width: 100%;
@@ -298,14 +261,58 @@ footer p {
     margin-top: 0.4rem;
 }
 
-/* Footer fix - reuse existing footer grid, only fix icons */
+footer {
+    width: 840px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(157, 118, 194);
+    padding: 12px 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    background: none;
+    background-color: transparent;
+    color: #e7eff0;
+    font-size: 12px;
+    text-align: left;
+    display: block;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: flex;
+}
+
+.socialmedia a:hover {
+    background-color: transparent;
+}
+
+.socialmedia img {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
 footer .socialmedia {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 footer .socialmedia img {
-    width: 30px;
-    height: 30px;
-    background: #fff;
+    width: 22px;
+    height: 22px;
+    background: transparent;
 }
